@@ -12,8 +12,12 @@
 		<title>Happy Birthday Mashinka</title>
 		<style type="text/css">
 			body {
+				position:fixed;
+				top:0;
+				left:0;
+				
 				color:#efefef;
-				background-color:#ED146F;
+				background-color:#ed146f;
 				
 				font-family:Helvetica, Arial, sans-serif;
 				font-size:18pt;
@@ -22,18 +26,53 @@
 				padding:0;
 				width:100%;
 				height:100%;
+				
+				display:flex;
+				flex-direction:column;
+				flex-flow:nowrap;
+				
+				justify-content:center;
+				align-items:center;
 			}
 			
+			.Emoji {
+				font-size:1.5em;
+			}
 			
+			hgroup {
+				text-align:center;
+			}
+			
+			h1, h2 {
+				margin:0;
+			}
+			
+			h1 {
+				font-size:10vw;
+			}
+			
+			h2 {
+				font-size:5vw;
+			}
+			
+			h3 {
+				font-size:2.5vw;
+				margin:0.5em 0;
+			}
 		</style>
 	</head>
 	<body>
-		<h1>Mashinka, youz a dirty dog.</h1>
-		<h2>Happy Birthday!</h2>
+		<hgroup>
+			<h1>MASHINKA!!</h1>
+			<h2><span class="Emoji">🐾</span> youze a dirty dawg <span class="Emoji">🐾</span></h2>
+			<h3>Happy Birthday or whatever 🎉</h3>
+		</hgroup>
 		
 		<script type="text/javascript">
 			
-			console.log("Hello, World.");
+			var audio = new Audio();
+			audio.autoplay = true;
+			audio.src = "http://ibiblio.org/chinese-music/MP3/YN01.There_Is_a_Beautiful_Place.mp3";
 			
 		</script>
 	</body>
